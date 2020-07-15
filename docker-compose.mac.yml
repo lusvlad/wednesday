@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  php-fpm:
+    volumes:
+      - php-fpm-macos:/var/www/html:nocopy
+
+volumes:
+  php-fpm-macos:
+    external: true

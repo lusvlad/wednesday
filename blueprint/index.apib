@@ -1,0 +1,25 @@
+FORMAT: 1A
+Host: https://localhost:1088
+
+# API documentation
+
+REST API
+
+# Group Валидация
+
+## Создание кода [POST /api/v1/generate-code]
++ Request (application/json)
+  + Attributes
+      + email: `test@test.com` (string, required)
++ Response 200 (application/json)
+
++ Response 400 (application/json)
+
+## Проверка кода [POST /api/v1/check-code]
++ Request (application/json)
+  + Attributes
+      + email: `test@test.com` (string, required)
+      + code: `1234` (string, required)
++ Response 200 (application/json)
+
++ Response 400 (application/json)
