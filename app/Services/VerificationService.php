@@ -69,7 +69,7 @@ class VerificationService
     private function createCode(string $email): string
     {
         while (true) {
-            $code = random_int(1000, 9999);
+            $code = sprintf('%04d', random_int(0, 9999));
             $token = sprintf('%s:%s', $email, $code);
             if ($this->redis->set($token, $code, 'EX', 300, 'NX')) {
                 return (string) $code;
