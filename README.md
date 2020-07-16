@@ -1,8 +1,8 @@
 # Test
 
 - api.html - файл спецификации
-- localsot:1088 - api
-- localsot:18025 - почта
+- localhost:1088 - api
+- localhost:18025 - почта
 
 ### 1. Создание .env
 
